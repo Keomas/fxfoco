@@ -1,0 +1,48 @@
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    z-index: 1;
+}
+
+.head{
+    background-color: #D9DADB;
+    font-weight: normal;
+}
+.formpedido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.albumselecionado{
+    max-width: 350px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    
+}
+.pedido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+}
+
+
+
+.card {
+    max-width: 450px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+   
+  }

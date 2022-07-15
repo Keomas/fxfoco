@@ -1,0 +1,80 @@
+<app-app-top-bar></app-app-top-bar>
+<div class="conteudo">
+    <mat-toolbar class="head">
+        
+        
+        <mat-toolbar-row>
+            <span>Novo Pedido</span>  
+        </mat-toolbar-row>
+        
+    </mat-toolbar>
+    <div class="formpedido">
+        <div>
+          <mat-card class="albumselecionado" data-aos="fade-up"
+            data-aos-duration="3000">
+               
+                <img mat-card-image src="../../assets/exemplo1.jpg" alt="exemplo1">
+                <mat-card-content>
+                <p style="color: #5b6269; font-family: Gulzar;" >
+                    Álbum com caixa box e capa do álbum com 
+                    revestimento natural e gravação laser. Detalhe da foto da capa do álbum em acrílico cristal.
+                </p>
+                </mat-card-content>
+               
+            </mat-card>
+        </div>
+        <div class="pedido">
+          <mat-card class="card" data-aos="fade-right"
+          data-aos-duration="3000">
+              <mat-card-title>Ordem de Serviço</mat-card-title>
+              <mat-card-subtitle>Start</mat-card-subtitle>
+            <div class="formulario">
+                <mat-form-field appearance="fill">
+                    <mat-label>Tamanho do Album</mat-label>
+                    <mat-select>
+                      <mat-option *ngFor="let album of tamAlbum" [value]="album.value">
+                        {{album.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                
+                    <mat-form-field appearance="fill">
+                        <mat-label>Laminação Album</mat-label>
+                        <mat-select>
+                          <mat-option *ngFor="let lamina of Laminacao" [value]="lamina.value">
+                            {{lamina.viewValue}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                      
+                        <mat-form-field appearance="fill">
+                            <mat-label>Material do Album</mat-label>
+                            <mat-select>
+                              <mat-option *ngFor="let material of albumMaterial" [value]="material.value">
+                                {{material.viewValue}}
+                              </mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                          <mat-form-field class="example-full-width" appearance="fill">
+                            <mat-label>Nº Fotos</mat-label>
+                            <input matInput type="number" placeholder="25" value="50">
+                          </mat-form-field>
+                          <div class="example-button-container">
+                            <button mat-raised-button  (click)="OpenAddFilesDialog()" color="primary" aria-label="Example icon button with a home icon">
+                              Enviar fotos
+                              <mat-icon>upload_file</mat-icon>
+                            </button>
+                            <input #FileSelectInputDialog type="file"  style ="display: none;" multiple/>
+
+                          </div>
+                        </div>
+                      </mat-card>
+                      
+        </div>
+
+    </div>
+
+
+    <app-app-footer-bar>
+    </app-app-footer-bar>
+</div>

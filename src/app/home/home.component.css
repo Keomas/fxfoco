@@ -1,0 +1,75 @@
+.painel{
+    height: 80vh;    
+   display: flex;
+   
+}
+.imagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/album.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 100%;
+    width: 100%;
+  
+}
+.logohome{
+    width: 60%;
+    height: 49%;
+}
+
+.titulo{
+    font-size: 90px;
+    font-family: 'Gulzar', serif;
+    font-weight: bolder;
+    color: azure;
+    margin-left: 6%;
+    margin-top: 20%;
+}
+
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.produtos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fafafa;
+}
+.apresentacao{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Signika', sans-serif;
+    font-size: xx-large;
+    color: #5b6269
+
+}
+
+.albuns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 45px;
+}
+
+.card {
+    max-width: 345px;
+    margin-top: 5px;
+   
+  }
+  
+  .header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }

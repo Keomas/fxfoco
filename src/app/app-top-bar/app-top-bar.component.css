@@ -1,0 +1,20 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .example-button-row {
+    display: table-cell;
+    width: 490px;
+  }
+
+  .barra{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #D9DADB;
+    box-shadow: 0 4px 10px 3px rgba(80, 20, 20, 0.8);
+    top: 0;
+   position: fixed;
+   z-index: 2;
+  }
